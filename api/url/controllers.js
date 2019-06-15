@@ -24,5 +24,11 @@ async function getUrls(req, res) {
   res.status(200).json(urls);
 }
 
+async function getUrl(req, res) {
+  const shortenUrl = req.params;
+  console.log(shortenUrl);
+}
+
 module.exports.createUrl = createUrl;
 module.exports.getUrls = getUrls;
+module.exports.getUrl = getUrl;
