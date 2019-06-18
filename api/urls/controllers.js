@@ -15,7 +15,6 @@ async function createUrl(req, res) {
         if (searchRandom) {
           random = uid2(5);
         }
-
         const newUrl = new Url({
           original,
           shorten: random
