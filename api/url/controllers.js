@@ -25,7 +25,7 @@ async function createUrl(req, res) {
         res.status(200).json(newUrl);
       }
     } else {
-      res.status(401).json("Please fill a valid url");
+      res.status(401).json("Please fill a valid url yolo");
     }
   } catch (error) {
     res.status(400).json({ error: error.message });
