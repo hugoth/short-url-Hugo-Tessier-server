@@ -9,7 +9,7 @@ setUpMiddlewares(app);
 
 app.use("/api", require("./api"));
 
-const url = require("./api/url/routes");
+const url = require("./api/urls/routes");
 app.use(url);
 
 app.listen(process.env.PORT || 3003, () => {
