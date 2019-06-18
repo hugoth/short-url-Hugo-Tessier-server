@@ -4,5 +4,5 @@ const controller = require("./controllers");
 
 router.post("/url/create", controller.createUrl);
 router.get("/url", controller.getUrls);
-router.get("/", controller.getUrl);
+router.get("/:url", controller.getUrl);
 module.exports = router;

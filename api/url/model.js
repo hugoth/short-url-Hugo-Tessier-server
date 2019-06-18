@@ -1,9 +1,6 @@
 const mongoose = require("mongoose");
+const UrlSchema = require("./schema");
 
-const Url = mongoose.model("Url", {
-  original: String,
-  shorten: String,
-  visits: Number
-});
+const Url = mongoose.model("Url", UrlSchema);
 
 module.exports = Url;
