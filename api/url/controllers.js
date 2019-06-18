@@ -22,7 +22,7 @@ async function createUrl(req, res) {
         });
 
         await newUrl.save();
-        res.json(newUrl);
+        res.status(200).json(newUrl);
       }
     } else {
       res.status(401).json("Please fill a valid url");
